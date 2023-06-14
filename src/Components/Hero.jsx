@@ -15,11 +15,11 @@ const Section = styled.div`
     height: 200vh;
   }
 `;
-
+  
 const Container = styled.div`
   height: 100%;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 1250px;
   display: flex;
   justify-content: space-between;
 

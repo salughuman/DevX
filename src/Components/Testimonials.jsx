@@ -25,7 +25,7 @@ const Testimonials = () => {
   return (
     <div className="mx-auto py-14 px-4 w-full bg-primary-100">
       <div className="mx-auto mb-8 text-center max-w-screen-sm lg:mb-16">
-      <h2 class=" text-dynamic font-raleway tracking-tight font-bold text-white ">What our clients say</h2>
+      <h2 className=" text-dynamic font-raleway tracking-tight font-bold text-white ">What our clients say</h2>
           <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">Eu feugiat pretium nibh ipsum consequat nisl. Aenean sed adipiscing diam donec adipiscing tristique risus.</p>
       </div> 
       <div className="relative mx-auto w-full h-80 max-w-5xl flex shadow-xl">
@@ -44,13 +44,13 @@ const Testimonials = () => {
           </div>
         </div>  
         <div className="z-10 absolute -bottom-5 right-1/2 md:-right-3 py-1 px-3 space-x-3 flex bg-secondary-100 text-black transform translate-x-1/2 md:translate-x-0">
-          <button type="button" aria-label="previous" className="flex-shrink-0 hover:text-gray-600" onClick={previousTestimony}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+          <button type="button" aria-label="previous" className="flex-shrink-0 hover:text-gray-600" onClick={previousTestimony}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
 </svg>
 
-</button>
-          <button type="button" aria-label="next" className="flex-shrink-0 hover:text-gray-600" onClick={nextTestimony}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+</button> 
+          <button type="button" aria-label="next" className="flex-shrink-0 hover:text-gray-600" onClick={nextTestimony}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
 </svg>
 </button>
         </div>

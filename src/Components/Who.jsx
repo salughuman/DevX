@@ -1,5 +1,7 @@
-import React, { Suspense } from "react";
+import React from "react";
 import styled from "styled-components";
+import Lottie from 'lottie-react';
+import who from "../assets/who.json";
 
 
 const Section = styled.div`
@@ -20,6 +22,7 @@ const Container = styled.div`
 
 const Left = styled.div`
   flex: 1;
+  display: flex;
 
   @media only screen and (max-width: 768px) {
     display: none;
@@ -77,12 +80,13 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+
 const Who = () => {
   return (
     <Section className=" bg-primary-100">
       <Container>
         <Left>
-          
+          <Lottie animationData={who}/>
         </Left>
         <Right>
           <Title className=" text-white font-bold">Think outside the square space</Title>
