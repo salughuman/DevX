@@ -22,12 +22,12 @@ cursor: pointer;
 
 const Services = () => {
   return (
-    <section className="my-10 ">
-      <p className=" font-normal text-[24px] mx-auto text-center text-[#FFFFFF] leading-9 font-lato sm:text-xl ">
+    <section className="py-20 bg-gray-400">
+      {/* <p className=" font-normal py-10 text-[24px] mx-auto text-center text-[#FFFFFF] leading-9 font-lato sm:text-xl ">
         From custom web design to content writing and search engine optimisation
         (SEO), our range of creative digital services will help you stand out
         online.
-      </p>
+      </p> */}
 
       <div className=" mx-auto  flex flex-wrap  justify-center  bg-white  max-w-7xl lg:h-[550px] sm:h-auto md:border-[0.5px] border-gray-600">
         <div className=" h-full font-lato w-1/2 flex flex-col justify-start gap-y-8 px-24 py-32 text-black ">
