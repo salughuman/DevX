@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import Projects from './Components/Projects';
 import Services from './Components/Services';
 // import Arrow from './Components/Arrow';
+import Team from './Components/Team';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,7 +26,7 @@ function App() {
       <Who />
       <Services />
       <Projects />
-
+      <Team />
       <Testimonials />
 
       <Footer />
