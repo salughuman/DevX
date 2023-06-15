@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 const Navbar = () => {
   return (
-    <nav className="flex justify-between py-5 items-center w-full mx-auto bg-transparent ">
-      <div className=" ml-20 ">
+    <nav className="flex justify-center py-5 items-center gap-80 w-auto mx-auto bg-transparent ">
+      <div className="   ">
         <img
-          className=" h-12 w-20 cursor-pointer"
+          className=" h-14 w-24 cursor-pointer"
           src="./devx-logo.webp"
           alt="..."
         />

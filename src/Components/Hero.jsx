@@ -1,3 +1,4 @@
+
 import React from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
@@ -11,23 +12,24 @@ const Section = styled.div`
   justify-content: space-between;
   background: url("./img/devxhero.webp");
   background-size: cover;
+
   @media only screen and (max-width: 768px) {
-    height: 200vh;
+    height: auto;
+    padding: 40px;
   }
 `;
-  
+
 const Container = styled.div`
   height: 100%;
   scroll-snap-align: center;
-  width: 1250px;
+  max-width: 1250px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 
   @media only screen and (max-width: 768px) {
-    width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 `;
 
@@ -37,16 +39,19 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  // text-align: left;
 
   @media only screen and (max-width: 768px) {
     flex: 1;
     align-items: center;
+    text-align: center;
   }
 `;
 
 const Title = styled.h1`
   font-size: 74px;
   color: white;
+
   @media only screen and (max-width: 768px) {
     text-align: center;
   }
@@ -86,12 +91,10 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-
-
 const Hero = () => {
   return (
     <Section className="">
-      
+
       <Navbar/>
       <Container>
         <Left>

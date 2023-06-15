@@ -5,11 +5,12 @@ import who from "../assets/who.json";
 
 
 const Section = styled.div`
-  height: 100vh;
+  height: 110vh;
   scroll-snap-align: center;
   background-color: primary-100;
   display: flex;
   justify-content: center;
+  padding: 40px;
 `;
 
 const Container = styled.div`
@@ -30,7 +31,7 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 74px;
+  font-size: 70px;
 
   @media only screen and (max-width: 768px) {
     font-size: 60px;

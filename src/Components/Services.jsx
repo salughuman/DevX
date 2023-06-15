@@ -22,7 +22,7 @@ cursor: pointer;
 
 const Services = () => {
   return (
-    <section className="py-20 bg-gray-400">
+    <section className="py-20 p-14 bg-gray-400">
       {/* <p className=" font-normal py-10 text-[24px] mx-auto text-center text-[#FFFFFF] leading-9 font-lato sm:text-xl ">
         From custom web design to content writing and search engine optimisation
         (SEO), our range of creative digital services will help you stand out
