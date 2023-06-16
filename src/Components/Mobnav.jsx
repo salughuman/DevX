@@ -34,10 +34,20 @@ function Mobnav() {
     setOpen(!open);
   };
   return (
-    <header className="bg-primary-100 w-full py-3">
+    <header className=" w-full p-">
       <nav className="flex justify-between items-center mx-4">
         <div>
-          <img className="h-6 cursor-pointer" src="./1.svg" alt="..." />
+          <img className="h-12 w-20 cursor-pointer" src="./devx-logo.webp" alt="..." />
+        </div>
+        <div>
+        <div className="flex items-center ">
+          <motion.button
+            className=" bg-secondary-100 font-lato w-32 rounded-lg text-black text-sm font-semibold md:text-xs px-5 py-2 "
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97, x: "-2px", y: "2px" }}
+          >
+            Get a Quote
+          </motion.button>
         </div>
         <div className={!open ? "hidden" : "absolute top-0 bg-primary-200 text-white underline underline-offset-8 z-30 h-screen min-h-[60vh] left-0 w-full flex items-center px-5"}>
           <ul className="font-bogart flex flex-col mx-auto items-start gap-8">
@@ -54,6 +64,7 @@ function Mobnav() {
               </motion.li>
             ))}
           </ul>
+        </div>
         </div>
         <div className="flex items-center gap-6">
           <div className="z-50" onClick={handleNav}>

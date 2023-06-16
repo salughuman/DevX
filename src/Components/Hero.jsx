@@ -1,15 +1,17 @@
-
-import React from "react";
+// import React from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
+import Mobnav from "./Mobnav";
+import React, { useState, useEffect } from "react";
 
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: space-between;
+
   background: url("./img/devxhero.webp");
   background-size: cover;
 
@@ -39,7 +41,8 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  // text-align: left;
+  padding: 130px;
+  padding-bottom: 200px;
 
   @media only screen and (max-width: 768px) {
     flex: 1;
@@ -92,12 +95,31 @@ const Button = styled.button`
 `;
 
 const Hero = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
+    
+     
     <Section className="">
 
-      <Navbar/>
+      {isMobile ? <Mobnav /> : <Navbar />}
       <Container>
-        <Left>
+        <Left className=" ">
           <Title className=" font-bold">Think. Make. Solve.</Title>
           <WhatWeDo className=" font-bold text-[24px] ">
             <Line src="./img/line.png" />

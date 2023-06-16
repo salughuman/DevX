@@ -11,6 +11,9 @@ const Section = styled.div`
   display: flex;
   justify-content: center;
   padding: 40px;
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
 const Container = styled.div`
@@ -34,7 +37,7 @@ const Title = styled.h1`
   font-size: 70px;
 
   @media only screen and (max-width: 768px) {
-    font-size: 60px;
+    font-size: 50px;
   }
 `;
 
@@ -79,6 +82,7 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
 `;
 
 

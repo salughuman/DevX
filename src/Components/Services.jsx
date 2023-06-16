@@ -6,83 +6,83 @@ import code from "../assets/code.json";
 import styled from "styled-components";
 
 const LEARNMORE = styled.button`
-background-color: rgb(218, 78, 162);
-color: white;
-font-weight: 500;
-width: 130px;
-padding: 10px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-&:hover {
   background-color: rgb(218, 78, 162);
-  opacity: 0.8;
-}
+  color: white;
+  font-weight: 500;
+  width: 130px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(218, 78, 162);
+    opacity: 0.8;
+  }
 `;
 
 const Services = () => {
   return (
     <section className="py-20 p-14 bg-gray-400">
-      {/* <p className=" font-normal py-10 text-[24px] mx-auto text-center text-[#FFFFFF] leading-9 font-lato sm:text-xl ">
-        From custom web design to content writing and search engine optimisation
-        (SEO), our range of creative digital services will help you stand out
-        online.
-      </p> */}
-
-      <div className=" mx-auto  flex flex-wrap  justify-center  bg-white  max-w-7xl lg:h-[550px] sm:h-auto md:border-[0.5px] border-gray-600">
-        <div className=" h-full font-lato w-1/2 flex flex-col justify-start gap-y-8 px-24 py-32 text-black ">
-          <p className="  text-[12px] font-semibold">DESIGN MADE SIMPLE</p>
-          <h1 className=" text-[26px] ">Web Design</h1>
-          <p className=" w-96">
-            Our unique web design capabilities allow us to work with business
-            owners across industries to create minimalistic, highly-engaging
-            websites.
-          </p>
-          <LEARNMORE>
-            <button> LEARN MORE</button>
-          </LEARNMORE>
-
-        </div>
-        <div className="text-center inline-flex content-center h-full w-1/2 text-gray-500 bg-slate-50 dark:text-gray-400=">
-          <Lottie animationData={webdesign} />
-        </div>
-      </div>
-      <div className=" mx-auto  flex flex-wrap  justify-center my-32  bg-white  max-w-7xl lg:h-[550px] sm:h-auto md:border-[0.5px] border-gray-600">
-        <div className="text-center h-full w-1/2 text-gray-500 bg-slate-50 dark:text-gray-400=">
-          <div className=" h-64 w-96 inline-flex content-center justify-center items-center my-28 drop-shadow-2xl">
-            <Lottie animationData={seo} />
+      <div className="mx-auto flex flex-wrap justify-center bg-white max-w-7xl">
+        <div className="w-full md:w-1/2 text-black">
+          <div className="text-center md:text-left py-32 px-8 md:px-24">
+            <p className="text-sm font-semibold pb-5">DESIGN MADE SIMPLE</p>
+            <h1 className="text-2xl md:text-4xl">Web Design</h1>
+            <p className="md:w-96 pb-3">
+              Our unique web design capabilities allow us to work with business
+              owners across industries to create minimalistic, highly-engaging
+              websites.
+            </p>
+            <LEARNMORE>LEARN MORE</LEARNMORE>
           </div>
         </div>
-        <div className=" h-full font-lato w-1/2 flex flex-col justify-start gap-y-8 px-24 py-32 text-black">
-          <p className="  text-[12px] font-semibold">
-            INCREASE YOUR ORGANIC TRAFFIC
-          </p>
-          <h1 className=" text-[26px] ">SEO</h1>
-          <p className=" w-96">
-            Our forensic approach to SEO strategy and implementation will
-            dramatically improve your visibility on Google and other search
-            engines to drive next-level business value.
-          </p>
-          <LEARNMORE>
-            <button> LEARN MORE</button>
-          </LEARNMORE>
+        <div className="w-full md:w-1/2">
+          <div className="text-center py-8 md:py-0">
+            <Lottie animationData={webdesign} />
+          </div>
         </div>
       </div>
-      <div className=" mx-auto  flex flex-wrap  justify-center  bg-white  max-w-7xl lg:h-[550px] sm:h-auto md:border-[0.5px] border-gray-600">
-        <div className=" h-full font-lato w-1/2 flex flex-col justify-start gap-y-8 px-24 py-32 text-black ">
-          <p className="  text-[12px] font-semibold">ONLY THE RIGHT WORDS</p>
-          <h1 className=" text-[26px] ">Copywriting</h1>
-          <p className=" w-96">
-            As SEO content strategists and writers, we craft in-brand messaging
-            that drives qualified web traffic, builds customer trust, offers
-            unique value, elicits engagements, and helps grow your business.
-          </p>
-          <LEARNMORE>
-            <button> LEARN MORE</button>
-          </LEARNMORE>
+      <div className="mx-auto flex flex-wrap justify-center my-32 bg-white max-w-7xl">
+        <div className="w-full md:w-1/2">
+          <div className="text-center md:py-0">
+            <div className="w-72 mx-auto md:my-28">
+              <Lottie animationData={seo} />
+            </div>
+          </div>
         </div>
-        <div className="text-center inline-flex content-center h-full w-1/2 grayscale text-gray-500 bg-slate-50 dark:text-gray-400=">
-          <Lottie animationData={code} />
+        <div className="w-full md:w-1/2 text-black">
+          <div className="text-center md:text-left py-32 px-8 md:px-24">
+            <p className="text-sm font-semibold pb-5">
+              INCREASE YOUR ORGANIC TRAFFIC
+            </p>
+            <h1 className="text-2xl md:text-4xl">SEO</h1>
+            <p className="md:w-96 pb-3">
+              Our forensic approach to SEO strategy and implementation will
+              dramatically improve your visibility on Google and other search
+              engines to drive next-level business value.
+            </p>
+            <LEARNMORE>LEARN MORE</LEARNMORE>
+          </div>
+        </div>
+      </div>
+      <div className="mx-auto flex flex-wrap justify-center bg-white max-w-7xl">
+        <div className="w-full md:w-1/2 text-black">
+          <div className="text-center md:text-left py-32 px-8 md:px-24">
+            <p className="text-sm font-semibold pb-5">ONLY THE RIGHT WORDS</p>
+            <h1 className="text-2xl md:text-4xl">Copywriting</h1>
+            <p className="md:w-96 pb-3">
+              As SEO content strategists and writers, we craft in-brand messaging
+              that drives qualified web traffic, builds customer trust, offers
+              unique value, elicits engagements, and helps grow your business.
+            </p>
+            <LEARNMORE>LEARN MORE</LEARNMORE>
+          </div>
+        </div>
+        <div className="w-full md:w-1/2 lg:pl-16 lg:pt-5">
+          <div className="text-center lg:w-96 py-8 md:py-0">
+            <Lottie animationData={code} />
+          </div>
         </div>
       </div>
     </section>
