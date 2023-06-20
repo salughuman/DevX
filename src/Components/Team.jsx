@@ -6,7 +6,7 @@ import devx from "../../public/devx-logo.webp";
 
 const Team = () => {
   return (
-    <section className="py-24 bg-gray-600">
+    <section className="py-24 p-2 bg-gray-600">
       <div className=" h-4 max-w-5xl bg-secondary-100 mx-auto"></div>
       <div className="py-8 px-4 mx-auto text-center  max-w-7xl sm:h-auto md:border-[0.5px] border-gray-600  bg-black lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
@@ -18,7 +18,7 @@ const Team = () => {
             elements built with the utility classNamees from Tailwind
           </p>
         </div>
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="text-center w-auto text-gray-500 dark:text-gray-400 hover:bg-green-700 p-8 rounded-2xl">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-xl"

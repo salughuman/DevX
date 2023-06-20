@@ -5,7 +5,7 @@ import who from "../assets/who.json";
 
 
 const Section = styled.div`
-  height: 110vh;
+  height: 120vh;
   scroll-snap-align: center;
   background-color: primary-100;
   display: flex;
