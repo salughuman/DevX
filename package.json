@@ -7,13 +7,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "start": "npm run dev"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
     "@ionic/react": "^6.4.2",
     "@rive-app/react-canvas": "^3.0.34",
+    "express": "^4.18.2",
     "flowbite": "^1.6.6",
     "framer-motion": "^8.4.3",
     "heroicons": "^2.0.13",
